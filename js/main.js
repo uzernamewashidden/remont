@@ -1,19 +1,23 @@
 $(document).ready(function () {
 
-    const button = $('#button'),
+    const body = $('body'),
+        button = $('#button'),
         modal = $('#modal'),
         close = $('#close');
 
+    // modal
     button.on('click', function () {
         modal.addClass('modal_active');
+        body.css('overflow','hidden');
     });
 
     close.on('click', function () {
         modal.removeClass('modal_active');
+        body.css('overflow','visible');
     });
 
 
-    //  PORTFOLIO SLIDER
+    //  Portfolio slider
     $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -28,7 +32,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

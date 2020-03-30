@@ -107,42 +107,42 @@
             <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
             <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
             <div class="cards">
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_1.png" alt="Ремонт ванных комнат"></div>
                     <div class="card__text">
                         <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
                         <a href="#" class="card__link">Узнать цены</a>
                     </div>
                 </div>
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_2.png" alt="Ремонт комнат и квартир"></div>
                     <div class="card__text">
                         <h4 class="card__title">Ремонт комнат и квартир</h4>
                         <a href="#" class="card__link">Узнать цены</a>
                     </div>
                 </div>
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_3.png" alt="Отделка офисных помещений"></div>
                     <div class="card__text">
                         <h4 class="card__title">Отделка офисных помещений</h4>
                         <a href="#" class="card__link">Узнать цены</a>
                     </div>
                 </div>
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_4.png" alt="Ремонт в новостройках"></div>
                     <div class="card__text">
                         <h4 class="card__title">Ремонт в новостройках</h4>
                         <a href="#" class="card__link">Узнать цены</a>
                     </div>
                 </div>
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_5.png" alt="Ремонт кухонь"></div>
                     <div class="card__text">
                         <h4 class="card__title">Ремонт кухонь</h4>
                         <a href="#" class="card__link">Узнать цены</a>
                     </div>
                 </div>
-                <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+                <div class="card price__card">
                     <div class="card__image"><img class="img_block" src="img/price_6.png" alt="Ремонт дач">
                     </div>
                     <div class="card__text">
@@ -152,9 +152,54 @@
                 </div>
             </div>
         </div>
-	</section>
+    </section>
+    
+    <!--    STEPS SECTION    -->
+    <section class="section steps">
+        <div class="container">
+            <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+            <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+
+            <div class="steps-block">
+                <div class="steps-block__item">
+                    <div class="steps-block__icon">
+                        <img src="img/steps-icon/01-woman_with_headset.png" alt="">
+                    </div>
+                    <span class="steps-block__text">Вы звоните нам или оставляете заявку</span>
+                </div>
+
+                <div class="steps-block__item">
+                    <div class="steps-block__icon">
+                        <img src="img/steps-icon/02-wall_clock.png" alt="">
+                    </div>
+                    <span class="steps-block__text">Согласуем удобное для Вас время выезда специалиста на замер</span>
+                </div>
+
+                <div class="steps-block__item">
+                    <div class="steps-block__icon">
+                        <img src="img/steps-icon/03-forma.png" alt="">
+                    </div>
+                    <span class="steps-block__text">Рассчитываем смету согласовываем с Вами</span>
+                </div>
+
+                <div class="steps-block__item">
+                    <div class="steps-block__icon">
+                        <img src="img/steps-icon/04-document.png" alt="">
+                    </div>
+                    <span class="steps-block__text">Подписываем договор закупаем материал по оптовым ценам</span>
+                </div>
+
+                <div class="steps-block__item">
+                    <div class="steps-block__icon">
+                        <img src="img/steps-icon/05-calendar_with_a_clock.png" alt="">
+                    </div>
+                    <span class="steps-block__text">Выполняем ремонт в указанные сроки</span>
+                </div>
+            </div>
+        </div>
+    </section>
 	
-	<!-----BRIF SECTION----->
+	<!--    BRIF SECTION    -->
     <section class="section brif">
         <div class="container">
             <div class="brif-block">
@@ -192,7 +237,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 </main>
 
 <!--   FOOTER   -->
@@ -236,6 +281,20 @@
         </div>
     </div>
 </footer>
+
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Заказать звонок</h4>
+        <form action="#" class="form modal-dialog__form">
+            <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
+            <input type="tel" class="input modal-dialog__input" placeholder="Ваш телефон">
+            <button class="button modal-dialog__button">Оставить заявку</button>
+        </form>
+        <p class="modal-dialog__desc">*Гарантируем конфиденциальность предоставленных данных.</p>
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
